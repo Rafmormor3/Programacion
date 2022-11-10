@@ -52,10 +52,9 @@ while numeros<0:
 
 b=0
 for n in range(0, numeros+1):
-    print(n)
     b=b+n
 print(f"The sum of the {numeros} first numbers is {b}")
-          
+         
 #7
 cantidad = int(input("\nHow many numbers do you want input? "))
 
@@ -85,18 +84,20 @@ while positivos>=0:
 
 print(f"You have {cont} positives numbers.")
     
-
+'''
 #6
 numeroA=int(input("\nEnter the numberA: "))
 numeroB=int(input("Enter the numberB: "))
 
 producto=0
-while numeroA!=0:
+
+for i in range(abs(numeroA)):
     producto=producto+numeroB
-    numeroA-=1
+if numeroA<0:
+    producto=-producto
 
 print("The product is",producto)
-
+'''
 #9
 entero=int(input("Enter an integer positive number greater than 0: "))
 
@@ -211,6 +212,7 @@ while exponente>0:
 print(f"La potencia es {potencia}")
 
 '''
+'''
 #20
 
 for i in range(0,20):
@@ -223,7 +225,7 @@ print("\nEl total de todos los meses es", total-10,"euros")
 numero=0
 total=(2**20)*10
 print("Suma sin bucle:",total-10)
-
+'''
     
     
 
