@@ -34,7 +34,7 @@ El orden recomendado para hacer los boletines son:
 
 ---
 
-
+![][gif]
 
 
 
@@ -53,4 +53,5 @@ El orden recomendado para hacer los boletines son:
 [boletines_condicionales]:https://github.com/Rafmormor3/Programacion/tree/master/condicionales/operadores
 [aqui]:https://github.com/jms3du/prog_python/blob/main/1.%20Introducci%C3%B3n%20a%20la%20programaci%C3%B3n%20estructurada/Intro.ipynb
 [perfil]:https://github.com/Rafmormor3
+[gif]:https://blog.penjee.com/wp-content/uploads/2015/11/while-loop-if-else-even-vs-odd-animation-how-it-works.gif
 
