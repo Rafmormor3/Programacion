@@ -1,7 +1,9 @@
 # Programacion
 ## Bienvenido al repositorio de Programación
-Aqui podrás encontrar encontrar todo el trabajo hecho por **_Rafael Morales Moreno_** en el módulo de **_Programación_**.
-------
+Aqui podrás encontrar encontrar todo el trabajo hecho por [**_Rafael Morales Moreno_**][perfil] en el módulo de **_Programación_**.
+
+---
+
 El contenido de este repositorio esta compuesto de:
 
 1.[Bucles:][bucle]
@@ -12,8 +14,25 @@ El contenido de este repositorio esta compuesto de:
   
 (Si le es necesario algunas nociones básicas podría consultarlo [AQUÍ][aqui])
 
-Para encontrar boletines de refuerzo, usted podría pinchar en algunas de estas opciones (recomendado seguir el orden ya propuesto):
+---
 
+El orden recomendado para hacer los boletines son:
+
+1. En el tema de **Condicionales**:
+  
+    - Boletin 1
+    - Boletin 2
+    - Boletin 3
+    - Boletin 4
+    - Condicionales_extras
+
+2. En el tema de **Bucles**:
+  
+    - Exercise 2
+    - Bucles_repaso
+    - Bucles_avanzados
+
+---
 
 
 
@@ -33,4 +52,5 @@ Para encontrar boletines de refuerzo, usted podría pinchar en algunas de estas 
 [condicionales]:https://github.com/Rafmormor3/Programacion/tree/master/condicionales
 [boletines_condicionales]:https://github.com/Rafmormor3/Programacion/tree/master/condicionales/operadores
 [aqui]:https://github.com/jms3du/prog_python/blob/main/1.%20Introducci%C3%B3n%20a%20la%20programaci%C3%B3n%20estructurada/Intro.ipynb
+[perfil]:https://github.com/Rafmormor3
 
