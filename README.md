@@ -1,6 +1,6 @@
-# Programacion
+# Programación
 ## Bienvenido al repositorio de Programación
-Aqui podrás encontrar encontrar todo el trabajo hecho por [**_Rafael Morales Moreno_**][perfil] en el módulo de **_Programación_**.
+Aquí podrás encontrar encontrar todo el trabajo hecho por [**_Rafael Morales Moreno_**][perfil] en el módulo de **_Programación_**.
 
 ---
 
@@ -20,10 +20,10 @@ El orden recomendado para hacer los boletines son:
 
 1. En el tema de **Condicionales**:
   
-    - Boletin 1
-    - Boletin 2
-    - Boletin 3
-    - Boletin 4
+    - Boletín 1
+    - Boletín 2
+    - Boletín 3
+    - Boletín 4
     - Condicionales_extras
 
 2. En el tema de **Bucles**:
