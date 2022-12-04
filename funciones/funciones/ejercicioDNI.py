@@ -17,7 +17,7 @@ def validarDNI(cadena):
         if c in LETRAS:
             res=False
     
-    if cadena[-1] not in LETRAS:
+    if cadena[-1].upper() not in LETRAS:
         res=False    
     
     if len(cadena)!=9:
