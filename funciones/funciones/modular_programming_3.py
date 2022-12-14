@@ -125,7 +125,7 @@ assert(estarPalabra("Que flores mas bonitas", "flores"))
 
 
 #7
-
+'''
 def buscarPalabra(frase, palabra):
     cont=0
     pal=0
@@ -170,10 +170,38 @@ def sustituirPalabra(frase, palabra, sustituto):
         oracion
         
     return oracion
-  
-print(sustituirPalabra("Que flores mas bonitas", "flores", "amapolas"))
+'''
+
+def sustituirPalabra(frase, palabra, sustituto):
+    
+    cont=0
+    oracion=""
+    tmp=""
+    
+    if len(palabra)==1:
+        palabra=" "+palabra+" "
+    
+    for i in range(len(frase)):
+        if frase[i]==palabra[cont]:
+            if cont==len(palabra)-1:
+                tmp=""
+                oracion+=sustituto
+                cont=0
+            else:
+                tmp+=frase[i]
+                cont+=1
+        else:
+            oracion+=tmp+frase[i]
+            cont=0
+            tmp=""
+    return oracion
+                
+ 
+print(sustituirPalabra("Que flores mas bonitas flores", "flores", "amapolas"))
 
 print(sustituirPalabra("hola a todos", "a", "guapos"))
+
+
 
 #8
 

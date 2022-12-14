@@ -13,31 +13,29 @@ print("4-Salir del programa")
 print("##############")
 
 opcion=int(input("\nIntroduce la opcion que quieras: "))
-bloqueo=False
 cont=0
 listaUs=["","","","","","","","","",""]
 listaCon=["","","","","","","","","",""]
 
 
-while opcion!=4 and bloqueo==False:
+while opcion!=4:
     
     if opcion==1:
         usuarios=input("\nIntroduce el usuario: ")
         
-        if cont<11:
+        if cont<10:
     
             if usuarios not in listaUs:
                 contrasena=input("Introduce contrasena: ")
                 contrasena2=input("Vuelve a introducirla: ")
+            
+                while contrasena!=contrasena2:
+                    print("Contrasena no coincide. Vuelve a intentarlo")
+                    contrasena2=input("Vuelve a introducirla: ")
+                    
+                listaUs.append(usuarios)
+                listaCon.append(contrasena2)
                 
-                if contrasena==contrasena2:
-                    listaUs[cont]=usuarios
-                    listaCon[cont]=contrasena2
-                    cont+=1
-                else:
-                    while contrasena!=contrasena2:
-                        print("Contrasena no coincide. Vuelve a intentarlo")
-                        contrasena2=input("Vuelve a introducirla: ")
             else:
                 print("USUARIO YA EXISTENTE")
         else:
@@ -50,9 +48,7 @@ while opcion!=4 and bloqueo==False:
         print("4-Salir del programa")
         print("##############")
         
-        opcion=int(input("\nIntroduce la opcion que quieras: ")) 
-         
-           
+        opcion=int(input("\nIntroduce la opcion que quieras: "))   
     
     elif opcion==2:
         usuario=input("Introduce el usuario: ")
@@ -62,49 +58,22 @@ while opcion!=4 and bloqueo==False:
             
             if contrasena not in listaCon:
                 
-                cont=0
+                intentos=0
                 while cont<3 and contrasena not in listaCon:
-                    cont+=1
+                    intentos+=1
                     contrasena=input("Vuelve a intentarlo:")
                 
-                if cont==3:
-                    bloqueo=True
-                    print("TU CUENTA HA SIDO BLOQUEADA")
-                
+                if intentos==3:
+                    for i in range(len(listaUs)):
+                        if usuario==listaUs[i]:
+                            contrasena[i]=""
+                            print("TU CUENTA HA SIDO BLOQUEADA")
                 else:
-                    contU=0
-                    while listaUs[contU]!=usuario:
-                        contU+=1
-                
-                    contC=0
-                    while listaCon[contC]!=contrasena:
-                        contC+=1
-                
-                    if contU==contC:
-                        print("BIENVENIDO!!!!!!")
-                    else:
-                        while listaCon[contC]!=contrasena:
-                            contC+=1
-                        print("BIENVENIDO!!!!!!")
-                    
+                    print("BIENVENIDO")        
+        else:
+            print("Usuario no existe")
             
-            else:
-                contU=0
-                while listaUs[contU]!=usuario:
-                    contU+=1
-                
-                contC=0
-                while listaCon[contC]!=contrasena:
-                    contC+=1
-                
-                if contU==contC:
-                    print("BIENVENIDO!!!!!!")
-                else:
-                    while listaCon[contC]!=contrasena:
-                        contC+=1
-                    print("BIENVENIDO!!!!!!")
-                
-        
+            
         print("\n##############")
         print("1-Crear nuevo usuario")
         print("2-Identificarse")
@@ -113,8 +82,7 @@ while opcion!=4 and bloqueo==False:
         print("##############")
         
         opcion=int(input("\nIntroduce la opcion que quieras: "))
-                    
-    
+                
     elif opcion==3:
         print(listaUs)
         
@@ -127,7 +95,6 @@ while opcion!=4 and bloqueo==False:
         
         opcion=int(input("\nIntroduce la opcion que quieras: "))
                     
-
 print("HAS SALIDO DEL MENU")        
         
 
