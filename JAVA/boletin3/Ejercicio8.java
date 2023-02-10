@@ -10,7 +10,7 @@ public class Ejercicio8 {
 		System.out.println(buscarRemplazar("el gato con botas", "perro", "gato"));
 	}
 
-	public static StringBuilder buscarRemplazar(String texto, String palabra, String sustituto) {
+	public static String buscarRemplazar(String texto, String palabra, String sustituto) {
 		StringBuilder res = new StringBuilder();
 		
 		if(texto!=null && palabra!=null && sustituto!=null && !texto.isEmpty() && !palabra.isEmpty() &&
@@ -19,7 +19,7 @@ public class Ejercicio8 {
 		}else {
 			res.append("0");
 		}
-		return res;	
+		return res.toString();	
 		
 	}
 }

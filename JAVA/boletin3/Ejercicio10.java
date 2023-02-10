@@ -2,54 +2,45 @@ package boletin3;
 
 public class Ejercicio10 {
 
+	public static final String ABECEDARIO="abcdefghijklmnñopqrstuvwxyz";
+	
+	
 	public static void main(String[] args) {
 		
-		System.out.println(caracterCifradoCesar('Z', 3));
+		System.out.println(caracterCifradoCesar('z', 3));
 		System.out.println(palabraCifradoCesar("CASADO", 3));
-		System.out.println(equivalentesCifradoCesar("CASado","fdvdgr" , 3));
+		System.out.println(obtenerNivelEquivalentesCifradoCesar("CASado","fdvdgr"));
 		
 	}
 	
 	public static char caracterCifradoCesar(char l, int posiciones) {
 		char letra = Character.toLowerCase(l);
-		String abc="abcdefghijklmnñopqrstuvwxyz";
-		int i=0;
-		char res = '0';
-		
-		while(i<abc.length() && res =='0') {
-			if(abc.charAt(i)== letra) {
-				if((i+posiciones)>=abc.length()) {
-					res=abc.charAt((i+posiciones)-(abc.length()));
-				}else {
-					res=abc.charAt(i+posiciones);
-				}
-			}
-			i++;
-		}
-		return res;
+		return ABECEDARIO.charAt((ABECEDARIO.indexOf(letra)+posiciones)%ABECEDARIO.length());
 	}
 	
 	public static String palabraCifradoCesar(String p, int posiciones) {
-		String res="";
+		StringBuilder res= new StringBuilder();
+		
 		if(p!=null && !p.isEmpty()) {
 			String palabra = p.toLowerCase();
 			for(int i=0; i<palabra.length();i++) {
-				res+=caracterCifradoCesar(palabra.charAt(i), posiciones);
+				res.append(caracterCifradoCesar(palabra.charAt(i), posiciones));
 			}
 		}
-		return res;
+		return res.toString();
 	}
 	
-	public static boolean equivalentesCifradoCesar(String p, String c, int posiciones) {
-		boolean res=false;
+	public static int obtenerNivelEquivalentesCifradoCesar(String palabra, String palabraCifrada) {
+		int desplazamiento=-1;
+		boolean equivalentes = false;
 		
-		if(palabraCifradoCesar(p, posiciones).equals(c) && p!=null && !p.isEmpty()
-				&& c!=null && !c.isEmpty()) {
-			String palabra = p.toLowerCase();
-			String cifrado = c.toLowerCase();
-			res=true;
+		while(!equivalentes && desplazamiento<=ABECEDARIO.length()) {
+			desplazamiento++;
+			if(palabraCifradoCesar(palabra, desplazamiento).equalsIgnoreCase(palabraCifrada)) {
+				equivalentes=true;
+			}
 		}
-		return res;
+		return equivalentes?desplazamiento:0;
 	}
 	
 }

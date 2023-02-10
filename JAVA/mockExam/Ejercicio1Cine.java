@@ -24,9 +24,21 @@ public class Ejercicio1Cine {
 			char diaSemana=sc.nextLine().charAt(0);
 			diaSemana=Character.toUpperCase(diaSemana);
 			
+			while(diaSemana!='L' && diaSemana!='M' && diaSemana!='X' && diaSemana!='J' && diaSemana!='V' && diaSemana!='S' && diaSemana!='D') {
+				System.out.println("Dia de la semana (L,M,X,J,V,S,D): ");
+				diaSemana=sc.nextLine().charAt(0);
+				diaSemana=Character.toUpperCase(diaSemana);
+			}
+			
 			System.out.println("Tienes tarjeta CineJacaranda?(S/N): ");
 			char tarjeta=sc.nextLine().charAt(0);
 			tarjeta=Character.toUpperCase(tarjeta);
+			
+			while(tarjeta!='S' && tarjeta!='N') {
+				System.out.println("Tienes tarjeta CineJacaranda?(S/N): ");
+				tarjeta=sc.nextLine().charAt(0);
+				tarjeta=Character.toUpperCase(tarjeta);
+			}
 			
 			if(diaSemana=='X') {
 				precio=PRECIO_MIERCOLES*numeroEntradas;

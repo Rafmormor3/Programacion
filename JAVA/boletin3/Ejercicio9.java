@@ -10,7 +10,7 @@ public class Ejercicio9 {
 
 	}
 	
-	public static StringBuilder contarPalabrasFrasesParrafos (String texto) {
+	public static String contarPalabrasFrasesParrafos (String texto) {
 		int contPalabra=0, contFrase=0, contParrafos=0;
 		StringBuilder res = new StringBuilder();
 		
@@ -28,7 +28,7 @@ public class Ejercicio9 {
 		
 		res=res.append("+Numero palabras: "+contPalabra + "   +Numero frase: "+contFrase+ "   +Numero parrafos: "+contParrafos);
 		
-		return res;
+		return res.toString();
 	}
 
 }

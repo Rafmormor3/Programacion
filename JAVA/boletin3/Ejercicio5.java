@@ -14,7 +14,7 @@ public class Ejercicio5 {
 
 	}
 	
-	public static StringBuilder quitarBlancos(String cadena) {
+	public static String quitarBlancos(String cadena) {
 		StringBuilder res = new StringBuilder();
 		
 		for(int i=0; i<cadena.length();i++) {
@@ -22,31 +22,31 @@ public class Ejercicio5 {
 				res.append(cadena.charAt(i));
 			}
 		}
-		return res;
+		return res.toString();
 	}
 	
-	public static StringBuilder darVuelta(String cadena) {
+	public static String darVuelta(String cadena) {
 		StringBuilder vuelta = new StringBuilder();
-		StringBuilder cadenaN= new StringBuilder(quitarBlancos(cadena));
+		String cadenaN= quitarBlancos(cadena);
 		
 		for(int i=cadenaN.length()-1; i>=0; i--) {
 			vuelta.append(cadenaN.charAt(i));
 		}
-		return vuelta;
+		return vuelta.toString();
 	}
 	
-	public static StringBuilder esPalindromo(String cadena) {
+	public static String esPalindromo(String cadena) {
 		StringBuilder res = new StringBuilder();
 		
 		if(cadena!=null && !cadena.isEmpty()) {
-			StringBuilder cadenaD=new StringBuilder(quitarBlancos(cadena));
-			StringBuilder cadenaV=new StringBuilder(darVuelta(cadena));
+			String cadenaD= quitarBlancos(cadena);
+			String cadenaV= darVuelta(cadena);
 		
-			res = cadenaD.toString().equalsIgnoreCase(cadenaV.toString())?res.append("Es palindromo"):res.append("No es palindromo");
+			res = cadenaD.equalsIgnoreCase(cadenaV)?res.append("Es palindromo"):res.append("No es palindromo");
 		}else {
 			res.append("0");
 		}
-		return res;
+		return res.toString();
 	}
 
 }

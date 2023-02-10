@@ -20,7 +20,7 @@ public class Ejercicio2 {
 		
 	}
 	
-	public static StringBuilder divisiblePorTres(int numero) {
+	public static String divisiblePorTres(int numero) {
 		StringBuilder res = new StringBuilder();
 		
 		String numeroC = String.valueOf(numero);
@@ -36,7 +36,7 @@ public class Ejercicio2 {
 			res.append("No es divisible");
 		}
 		
-		return res;
+		return res.toString();
 	}
 	
 	public static int sumaDigitos(String cadena) {
