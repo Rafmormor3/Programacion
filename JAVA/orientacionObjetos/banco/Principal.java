@@ -17,7 +17,7 @@ public class Principal {
 		
 		System.out.println("Introduce un saldo inicial a introducir en la cuenta:");
 		double saldo = Double.valueOf(sc.nextLine());
-		cuenta.setSaldo(saldo);
+		cuenta.ingreso(saldo);
 		
 		boolean res = false;
 		
@@ -31,13 +31,13 @@ public class Principal {
 			case 1:
 				System.out.println("Introduce el saldo a retirar: ");
 				double reintegro = Double.valueOf(sc.nextLine());
-				cuenta.reintegro(reintegro);
+				System.out.println("Retirado con exito? "+ cuenta.reintegro(reintegro));
 				break;
 				
 			case 2:
 				System.out.println("Introduce el saldo a ingresar: ");
 				double ingreso = Double.valueOf(sc.nextLine());
-				cuenta.ingreso(ingreso);
+				System.out.println("Ingresado con exito? "+cuenta.ingreso(ingreso));
 				break;
 				
 			case 3:

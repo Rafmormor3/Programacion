@@ -26,8 +26,10 @@ public class Principal {
 		System.out.println("Primer numero complejo: "+c1.toString());
 		System.out.println("Segundo numero complejo: "+c2.toString());
 		
-		System.out.println("Suma: "+c1.suma(c2.getParteReal(), c2.getParteImaginaria()));
-		System.out.println("Resta: "+c1.resta(c2.getParteReal(), c2.getParteImaginaria()));
+		System.out.println("Suma: "+c1.suma(c2));
+		System.out.println("Resta: "+c1.resta(c2));
+		System.out.println("Multiplicacion: "+c1.multiplicacion(c2));
+		System.out.println("Division: "+c1.division(c2));
 
 	}
 

@@ -40,11 +40,11 @@ public class Menu {
 			
 			switch (o) {
 			case 1:
-				System.out.println("Suma: "+c1.suma(c2.getParteReal(), c2.getParteImaginaria()));
+				System.out.println("Suma: "+c1.suma(c2));
 				break;
 			
 			case 2:
-				System.out.println("Resta: "+c1.resta(c2.getParteReal(), c2.getParteImaginaria()));
+				System.out.println("Resta: "+c1.resta(c2));
 				break;
 			}
 			

@@ -9,25 +9,34 @@ public class Cuenta {
 	
 	public Cuenta(double saldo, int numReintegros, int numIngresos) {
 		super();
-		this.saldo = saldo;
-		this.numReintegros = numReintegros;
-		this.numIngresos = numIngresos;
+		this.saldo = 0;
+		this.numReintegros = 0;
+		this.numIngresos = 0;
 	}
 	
-	public void reintegro(double reint) {
-		this.numReintegros++;
-		this.saldo=this.saldo-reint;
+	public boolean reintegro(double reint) {
+		boolean res = false;
+		if(reint>0 && this.saldo>=reint) {
+			this.numReintegros++;
+			this.saldo=this.saldo-reint;
+			res=true;
+		}
+		return res;
 	}
 	
-	public void ingreso(double ingres) {
-		this.numIngresos++;
-		this.saldo=this.saldo-ingres;	
+	public boolean ingreso(double ingres) {
+		boolean res = false;
+		if(ingres>0) {
+			this.numIngresos++;
+			this.saldo=this.saldo-ingres;		
+		}
+		return res;
 	}
 	
 
 	@Override
 	public String toString() {
-		return "El saldo de la cuenta es" + saldo + ", numero de reintegros realizados:" + numReintegros + ", numero de ingresos "
+		return "El saldo de la cuenta es " + saldo + ", numero de reintegros realizados:" + numReintegros + ", numero de ingresos "
 				+ "realizados" + numIngresos;
 	}
 	
@@ -36,32 +45,6 @@ public class Cuenta {
 	public double getSaldo() {
 		return saldo;
 	}
-
-
-	public void setSaldo(double saldo) {
-		this.saldo = saldo;
-	}
-
-
-	public int getNumReintegros() {
-		return numReintegros;
-	}
-
-
-	public void setNumReintegros(int numReintegros) {
-		this.numReintegros = numReintegros;
-	}
-
-
-	public int getNumIngresos() {
-		return numIngresos;
-	}
-
-
-	public void setNumIngresos(int numIngresos) {
-		this.numIngresos = numIngresos;
-	}
-	
 	
 	
 	
