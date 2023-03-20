@@ -7,7 +7,7 @@ import mock.comida.Plato;
 
 public class Principal {
 	
-	private static final String MENU="\n1. Dar de alta un plato.\n"
+	public static final String MENU="\n1. Dar de alta un plato.\n"
 									+ "2. Modificar el precio de un plato.\n"
 									+ "3. Asignar un vino a un plato.\n"
 									+ "4. Mostrar información de un plato.\n"
