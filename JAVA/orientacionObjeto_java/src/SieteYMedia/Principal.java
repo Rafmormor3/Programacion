@@ -103,7 +103,6 @@ public class Principal {
 		} catch (Exception e1) {
 			e1.getMessage();
 		}
-		
 
 	}
 
