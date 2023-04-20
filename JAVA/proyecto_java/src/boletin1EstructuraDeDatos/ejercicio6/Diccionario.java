@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
 
-public class Diccionario implements Comparable<String> {
+public class Diccionario{
 	
 	private Map<String, Set<String>> diccionario;
 
@@ -20,23 +20,16 @@ public class Diccionario implements Comparable<String> {
 			throw new Exception("Valores introducidos nulos");
 		}
 		
-		if(estarPalabra(palabra)==-1) {
+		if(!this.diccionario.containsKey(palabra)) {
 			Set<String> significados = new HashSet<>();
-			significados.add(significado);
 			this.diccionario.put(palabra, significados);
-		}else {
-			for(String p : this.diccionario.keySet()) {
-				if(palabra.equals(p)) {
-					this.diccionario.get(palabra).add(significado);
-				}
-			}
 		}
-		
+		this.diccionario.get(palabra).add(significado);
 	}
 	
 	public String buscarPalabra(String palabra) throws Exception {
 		StringBuilder sb = new StringBuilder();
-		if(palabra==null || estarPalabra(palabra)==-1) {
+		if(palabra==null || !this.diccionario.containsKey(palabra)) {
 			throw new Exception("Palabra no encontrada");
 		}
 		
@@ -46,7 +39,7 @@ public class Diccionario implements Comparable<String> {
 	}
 	
 	public void borrarPalabra(String palabra) throws Exception {
-		if(palabra==null || estarPalabra(palabra)==-1) {
+		if(palabra==null || !this.diccionario.containsKey(palabra)) {
 			throw new Exception("Palabra no encontrada");
 		}
 		
@@ -67,18 +60,6 @@ public class Diccionario implements Comparable<String> {
 		}
 		return ordenado;
 	}
-	
-	
-	
-	private int estarPalabra(String palabra) {
-		int res=-1;
-		for(String p : this.diccionario.keySet()) {
-			if(palabra.equals(p)) {
-				res=0;
-			}
-		}
-		return res;
-	}
 
 	@Override
 	public String toString() {
@@ -89,10 +70,6 @@ public class Diccionario implements Comparable<String> {
 		return sb.toString();
 	}
 
-	@Override
-	public int compareTo(String o) {
-		return 0;
-	}
 	
 	
 	

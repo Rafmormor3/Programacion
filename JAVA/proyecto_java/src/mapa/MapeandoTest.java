@@ -1,13 +1,19 @@
 package mapa;
 
+import static org.junit.jupiter.api.Assertions.*;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class Main {
+import org.junit.jupiter.api.Test;
 
-	public static void main(String[] args) {
+class MapeandoTest {
+
+	@Test
+	void testMapearPersonasPorGenero() {
+		
 		Persona p1 = new Persona("Rafa","Morales",Genero.MASCULINO);
 		Persona p2 = new Persona("Manolo","Gimenez",Genero.NEUTRO);
 		Persona p3 = new Persona("Tomas","Rodriguez",Genero.DESCONOCIDO);
@@ -23,21 +29,21 @@ public class Main {
 		p.add(p5);
 		p.add(p6);
 		
-		Mapeando mapa = new Mapeando();
+		assert(new Mapeando().mapearPersonasPorGenero(p).size()==4);
+	}
+
+	@Test
+	void testContarNumeros() {
 		
-		System.out.println(mapa.mapearPersonasPorGenero(p));
+		Mapeando mapa = new Mapeando();
 		
 		List<Integer> l = new ArrayList<>();
 		l.add(2);
 		l.add(5);
 		l.add(2);
-		System.out.println(mapa.contarNumeros(l));
 		
-		System.out.println(mapa.contarNumeros(mapa.generarNumerosAleatorios(20)));
+		assert(mapa.contarNumeros(l).size()==2);
 		
-		
-		
-
 	}
 
 }
