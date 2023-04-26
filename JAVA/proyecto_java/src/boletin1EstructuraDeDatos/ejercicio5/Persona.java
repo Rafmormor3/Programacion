@@ -1,22 +1,31 @@
 package boletin1EstructuraDeDatos.ejercicio5;
 
+import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
 public abstract class Persona{
+	public final int MAYOR=18;
 	
 	private String nombre;
+	private LocalDate fechaNac;
 	private List<Mensaje> buzon;
 	
-	public Persona(String nombre) {
+	public Persona(String nombre,LocalDate fechaNac) {
 		super();
 		this.nombre = nombre;
+		this.fechaNac=fechaNac;
 		this.buzon= new ArrayList<>();
 	}
 	
 	public abstract void enviarMensaje(Persona destinatario, String texto) throws Exception;
+	
+	public boolean esMayorDeEdad() {
+        return (int)ChronoUnit.YEARS.between(this.fechaNac, LocalDate.now())>=MAYOR;
+    }
 	
 	protected void recibirMensaje(Mensaje mensaje) {
 		this.buzon.add(mensaje);
@@ -46,7 +55,7 @@ public abstract class Persona{
 		int encontrado = -1;
 		while(it.hasNext()==true) {
 			Mensaje sig = it.next();
-			if(sig.getId()==numeroMensaje) {
+			if(Integer.valueOf(sig.getId())==numeroMensaje) {
 				it.remove();
 				encontrado=0;
 			}
@@ -67,8 +76,6 @@ public abstract class Persona{
 		}
 		return aux.toString();
 	}
-	
-	
-	
+
 
 }

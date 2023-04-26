@@ -5,7 +5,7 @@ import java.time.LocalDate;
 public class Main {
 
 	public static void main(String[] args) {
-		Persona p1 = new Profesor("Alvaro");
+		Persona p1 = new Profesor("Alvaro", LocalDate.of(1978, 10, 10));
 		Persona p2 = new Alumno("Rafa", LocalDate.of(2002, 5, 9));
 		Persona p3 = new Alumno("Fran", LocalDate.of(1994, 10, 25));
 		

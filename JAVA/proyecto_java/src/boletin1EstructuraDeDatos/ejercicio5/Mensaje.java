@@ -1,13 +1,15 @@
 package boletin1EstructuraDeDatos.ejercicio5;
 
 import java.time.LocalDateTime;
+import java.util.Comparator;
 
 public class Mensaje implements Comparable<Mensaje>{
 
 	private Persona remitente;
 	private String texto;
 	private LocalDateTime fechaHora;
-	private static int id=0;
+	private String id;
+	private static int secuencia=1;
 	
 	public Mensaje(Persona remitente, String texto) throws Exception {
 		super();
@@ -17,10 +19,11 @@ public class Mensaje implements Comparable<Mensaje>{
 		this.remitente = remitente;
 		this.texto = texto;
 		this.fechaHora = LocalDateTime.now();
+		this.id=""+secuencia++;
 	}
 
-	public static int getId() {
-		return id++;
+	public String getId() {
+		return id;
 	}
 
 	public String getTexto() {
@@ -29,13 +32,15 @@ public class Mensaje implements Comparable<Mensaje>{
 
 	@Override
 	public String toString() {
-		return "\nMensaje "+getId()+" De: " + remitente.getNombre()+ ", \nTexto:" + texto + ", \nFecha y Hora=" + fechaHora;
+		return "\nMensaje "+id+" De: " + remitente.getNombre()+ ", Texto:" + texto + ", Fecha y Hora=" + fechaHora;
 	}
 
 	@Override
 	public int compareTo(Mensaje o) {
-		return this.remitente.getNombre().compareTo(o.remitente.getNombre());
+		return id.compareTo(o.id);
 	}
+
+
 
 
 	
