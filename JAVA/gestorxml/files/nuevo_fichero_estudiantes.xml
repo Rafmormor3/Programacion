@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<estudiantes>
+    <estudiante identificador="1">
+        <nombre>jm</nombre>
+        <apellido>sa</apellido>
+        <Fecha_Nacimiento>unknown</Fecha_Nacimiento>
+        <Genero>HOMBRE</Genero>
+    </estudiante>
+    <estudiante identificador="2">
+        <nombre>gonzalo</nombre>
+        <apellido>sa</apellido>
+        <Fecha_Nacimiento>unknown</Fecha_Nacimiento>
+        <Genero>HOMBRE</Genero>
+    </estudiante>
+    <estudiante identificador="3">
+        <nombre>alvaro</nombre>
+        <apellido>sa</apellido>
+        <Fecha_Nacimiento>unknown</Fecha_Nacimiento>
+        <Genero>HOMBRE</Genero>
+    </estudiante>
+    <estudiante identificador="4">
+        <nombre>ivan</nombre>
+        <apellido>sa</apellido>
+        <Fecha_Nacimiento>unknown</Fecha_Nacimiento>
+        <Genero>HOMBRE</Genero>
+    </estudiante>
+</estudiantes>
