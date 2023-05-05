@@ -14,6 +14,7 @@ public class Combinacion {
 	protected static final int VALOR_MAXIMO_ESTRELLAS=12;
 	protected static final int TOTAL_NUMEROS=5;
 	protected static final int TOTAL_ESTRELLAS=2;
+	
 	private Set<Integer> numeros;
 	private Set<Integer> estrellas;
 	
@@ -25,11 +26,11 @@ public class Combinacion {
 		this.estrellas= new HashSet<>();
 		this.estrellas.add(e1);this.estrellas.add(e2);
 		
-		if(this.numeros.size()!=5 || this.estrellas.size()!=2 || valoresValidos(this.numeros)== false || valoresValidos(this.estrellas)==false) {
+		if(this.numeros.size()!=TOTAL_NUMEROS || this.estrellas.size()!=TOTAL_ESTRELLAS || valoresValidos(this.numeros)== false || valoresValidos(this.estrellas)==false) {
 			throw new CombinacionException("Valores no validos");
 		}
 	}
-	 //hacer con un bucle, meter uno a uno en el set
+	
 	public Combinacion(int[]numeros, int[]estrellas) throws CombinacionException {
 		this(numeros[0],numeros[1], numeros[2],numeros[3],numeros[4],estrellas[0],estrellas[1]);
 	}
@@ -43,22 +44,13 @@ public class Combinacion {
 	
 	
 	public int comprobarCombinacion(Combinacion c) {
-		Set<Integer> num1 = new HashSet<>();
-		Set<Integer> num2 = new HashSet<>();
-		Set<Integer> est1 = new HashSet<>();
-		Set<Integer> est2 = new HashSet<>();
+		Set<Integer> num1 = new HashSet<>(numeros);
+		Set<Integer> est1 = new HashSet<>(estrellas);
 		
-		num1.addAll(this.numeros);
-		est1.addAll(this.estrellas);
-		num2.addAll(c.numeros);
-		est2.addAll(c.estrellas);
+		num1.retainAll(this.numeros);
+		est1.retainAll(this.estrellas);
 		
-		num1.retainAll(num2);
-		est1.retainAll(est2);
-		int combinacionNum = num1.size();
-		int combinacionEstrellas=est1.size();
-		
-		return combinacionNum+combinacionEstrellas;
+		return num1.size()+est1.size();
 	}
 	
 	@Override
@@ -67,12 +59,7 @@ public class Combinacion {
 	}
 	@Override
 	public boolean equals(Object obj) {
-		boolean iguales = this==obj;
-		if(!iguales && obj!=null && obj instanceof Combinacion) {
-			Combinacion otro = (Combinacion) obj;
-			iguales=this.hashCode()==otro.hashCode();
-		}
-		return iguales;
+		return this == obj || obj!=null && obj instanceof Combinacion && obj.hashCode()==this.hashCode();
 	}
 	
 	@Override
@@ -87,8 +74,8 @@ public class Combinacion {
 		boolean res=true;
 		while(it.hasNext() && res==true) {
 			Integer sig = it.next();
-			if((numeros.size()==2 && !(sig>=VALOR_MINIMO && sig<=VALOR_MAXIMO_ESTRELLAS)) 
-					|| (numeros.size()==5 && !(sig>=VALOR_MINIMO && sig<=VALOR_MAXIMO_NUMEROS))) {
+			if((numeros.size()==TOTAL_ESTRELLAS && !(sig>=VALOR_MINIMO && sig<=VALOR_MAXIMO_ESTRELLAS)) 
+					|| (numeros.size()==TOTAL_NUMEROS && !(sig>=VALOR_MINIMO && sig<=VALOR_MAXIMO_NUMEROS))) {
 				res=false;
 			}
 		}

@@ -10,7 +10,6 @@ public class Fichero {
 	
 	private FileTime fechaCreacion;
 	private long size;
-	//private String usuario;
 	private boolean permisoLectura;
 	private boolean permisoEscritura;
 	private boolean permisoEjecucion;
