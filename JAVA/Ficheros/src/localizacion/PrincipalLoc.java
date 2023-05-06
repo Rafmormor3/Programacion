@@ -24,6 +24,7 @@ public class PrincipalLoc {
 			printer.close();
 			writer.close();
 			
+			
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

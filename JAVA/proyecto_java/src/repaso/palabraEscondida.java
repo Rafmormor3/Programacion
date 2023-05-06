@@ -4,7 +4,7 @@ public class palabraEscondida {
 
 	public static void main(String[] args) {
 		
-		System.out.println(estaPalabra("  d", "  "));
+		System.out.println(estaPalabra("adios", "hola"));
 
 	}
 	
@@ -14,8 +14,8 @@ public class palabraEscondida {
 		
 		if(texto!=null && palabra!=null && !texto.isEmpty() && !palabra.isEmpty() && palabra.length()<=texto.length()) {
 			
-			for(int i=0; i<palabra.length();i++) {
-				if(palabra.charAt(i)==palabra.charAt(cont)) {
+			for(int i=0; i<texto.length() && cont<palabra.length();i++) {
+				if(texto.charAt(i)==palabra.charAt(cont)) {
 					cont++;
 				}
 			}	
