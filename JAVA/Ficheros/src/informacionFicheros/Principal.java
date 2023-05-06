@@ -15,7 +15,7 @@ public class Principal {
 			//fichero1.createNewFile();
 			
 			//Fichero f1 = new Fichero("C:\\Users\\moral\\OneDrive\\Escritorio\\ProbandoFicheros\\fichero1.txt");
-			
+			/*
 			FileWriter writer = new FileWriter(fichero1);
 			PrintWriter printer = new PrintWriter(writer);
 			
@@ -25,15 +25,16 @@ public class Principal {
 			
 			printer.close();
 			writer.close();
-			
+			*/
 			
 			FileReader reader = new FileReader(fichero1);
 			BufferedReader buffer = new BufferedReader(reader);
 			
 			String linea=buffer.readLine();
+			linea=buffer.readLine();
 			
 			while(linea!=null) {
-				System.out.println(linea);
+				System.out.println(linea.split(",")[0]);
 				linea=buffer.readLine();
 			}
 			

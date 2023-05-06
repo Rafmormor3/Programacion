@@ -1,0 +1,109 @@
+Pais India (id: 44) con 60 ciudades y 106 calles
+Pais China (id: 23) con 53 ciudades y 70 calles
+Pais United States (id: 103) con 35 ciudades y 60 calles
+Pais Brazil (id: 15) con 28 ciudades y 50 calles
+Pais Japan (id: 50) con 31 ciudades y 50 calles
+Pais Russian Federation (id: 80) con 28 ciudades y 50 calles
+Pais Mexico (id: 60) con 30 ciudades y 42 calles
+Pais Philippines (id: 75) con 20 ciudades y 32 calles
+Pais Nigeria (id: 69) con 13 ciudades y 24 calles
+Pais Argentina (id: 6) con 13 ciudades y 20 calles
+Pais South Africa (id: 85) con 11 ciudades y 20 calles
+Pais Indonesia (id: 45) con 14 ciudades y 18 calles
+Pais Turkey (id: 97) con 15 ciudades y 18 calles
+Pais Iran (id: 46) con 8 ciudades y 16 calles
+Pais Germany (id: 38) con 7 ciudades y 14 calles
+Pais Canada (id: 20) con 7 ciudades y 12 calles
+Pais Taiwan (id: 92) con 10 ciudades y 12 calles
+Pais Colombia (id: 24) con 6 ciudades y 10 calles
+Pais Pakistan (id: 72) con 5 ciudades y 10 calles
+Pais Saudi Arabia (id: 82) con 5 ciudades y 10 calles
+Pais Venezuela (id: 104) con 7 ciudades y 10 calles
+Pais Egypt (id: 29) con 6 ciudades y 8 calles
+Pais France (id: 34) con 4 ciudades y 8 calles
+Pais Italy (id: 49) con 7 ciudades y 8 calles
+Pais Netherlands (id: 67) con 5 ciudades y 8 calles
+Pais Poland (id: 76) con 8 ciudades y 8 calles
+Pais South Korea (id: 86) con 5 ciudades y 8 calles
+Pais Spain (id: 87) con 5 ciudades y 8 calles
+Pais Ukraine (id: 100) con 6 ciudades y 8 calles
+Pais United Kingdom (id: 102) con 8 ciudades y 8 calles
+Pais Yemen (id: 107) con 4 ciudades y 8 calles
+Pais Algeria (id: 2) con 3 ciudades y 6 calles
+Pais Austria (id: 9) con 3 ciudades y 6 calles
+Pais Bangladesh (id: 12) con 3 ciudades y 6 calles
+Pais Dominican Republic (id: 27) con 3 ciudades y 6 calles
+Pais Israel (id: 48) con 4 ciudades y 6 calles
+Pais Malaysia (id: 59) con 3 ciudades y 6 calles
+Pais Mozambique (id: 63) con 3 ciudades y 6 calles
+Pais Paraguay (id: 73) con 3 ciudades y 6 calles
+Pais Thailand (id: 94) con 3 ciudades y 6 calles
+Pais United Arab Emirates (id: 101) con 3 ciudades y 6 calles
+Pais Vietnam (id: 105) con 6 ciudades y 6 calles
+Pais Australia (id: 8) con 1 ciudades y 4 calles
+Pais Azerbaijan (id: 10) con 2 ciudades y 4 calles
+Pais Bolivia (id: 14) con 2 ciudades y 4 calles
+Pais Cameroon (id: 19) con 2 ciudades y 4 calles
+Pais Chile (id: 22) con 3 ciudades y 4 calles
+Pais Congo (id: 25) con 2 ciudades y 4 calles
+Pais French Polynesia (id: 36) con 2 ciudades y 4 calles
+Pais Kenya (id: 52) con 2 ciudades y 4 calles
+Pais Latvia (id: 54) con 2 ciudades y 4 calles
+Pais Morocco (id: 62) con 3 ciudades y 4 calles
+Pais Myanmar (id: 64) con 2 ciudades y 4 calles
+Pais Peru (id: 74) con 4 ciudades y 4 calles
+Pais Puerto Rico (id: 77) con 2 ciudades y 4 calles
+Pais Sudan (id: 89) con 2 ciudades y 4 calles
+Pais Switzerland (id: 91) con 3 ciudades y 4 calles
+Pais Tanzania (id: 93) con 3 ciudades y 4 calles
+Pais Afghanistan (id: 1) con 1 ciudades y 2 calles
+Pais American Samoa (id: 3) con 1 ciudades y 2 calles
+Pais Angola (id: 4) con 2 ciudades y 2 calles
+Pais Anguilla (id: 5) con 1 ciudades y 2 calles
+Pais Armenia (id: 7) con 1 ciudades y 2 calles
+Pais Belarus (id: 13) con 2 ciudades y 2 calles
+Pais Brunei (id: 16) con 1 ciudades y 2 calles
+Pais Bulgaria (id: 17) con 2 ciudades y 2 calles
+Pais Cambodia (id: 18) con 2 ciudades y 2 calles
+Pais Czech Republic (id: 26) con 1 ciudades y 2 calles
+Pais Ecuador (id: 28) con 3 ciudades y 2 calles
+Pais Estonia (id: 30) con 1 ciudades y 2 calles
+Pais Ethiopia (id: 31) con 1 ciudades y 2 calles
+Pais Faroe Islands (id: 32) con 1 ciudades y 2 calles
+Pais Finland (id: 33) con 1 ciudades y 2 calles
+Pais French Guiana (id: 35) con 1 ciudades y 2 calles
+Pais Greece (id: 39) con 2 ciudades y 2 calles
+Pais Greenland (id: 40) con 1 ciudades y 2 calles
+Pais Holy See Vatican City State (id: 41) con 1 ciudades y 2 calles
+Pais Hong Kong (id: 42) con 1 ciudades y 2 calles
+Pais Kazakstan (id: 51) con 2 ciudades y 2 calles
+Pais Kuwait (id: 53) con 1 ciudades y 2 calles
+Pais Liechtenstein (id: 55) con 1 ciudades y 2 calles
+Pais Madagascar (id: 57) con 1 ciudades y 2 calles
+Pais Malawi (id: 58) con 1 ciudades y 2 calles
+Pais Moldova (id: 61) con 1 ciudades y 2 calles
+Pais Nepal (id: 66) con 1 ciudades y 2 calles
+Pais New Zealand (id: 68) con 1 ciudades y 2 calles
+Pais North Korea (id: 70) con 1 ciudades y 2 calles
+Pais Oman (id: 71) con 2 ciudades y 2 calles
+Pais Romania (id: 78) con 2 ciudades y 2 calles
+Pais Runion (id: 79) con 1 ciudades y 2 calles
+Pais Saint Vincent and the Grenadines (id: 81) con 1 ciudades y 2 calles
+Pais Senegal (id: 83) con 1 ciudades y 2 calles
+Pais Slovakia (id: 84) con 1 ciudades y 2 calles
+Pais Sri Lanka (id: 88) con 1 ciudades y 2 calles
+Pais Sweden (id: 90) con 1 ciudades y 2 calles
+Pais Tonga (id: 95) con 1 ciudades y 2 calles
+Pais Tunisia (id: 96) con 1 ciudades y 2 calles
+Pais Turkmenistan (id: 98) con 1 ciudades y 2 calles
+Pais Tuvalu (id: 99) con 1 ciudades y 2 calles
+Pais Virgin Islands (id: 106) con 1 ciudades y 2 calles
+Pais Yugoslavia (id: 108) con 2 ciudades y 2 calles
+Pais Zambia (id: 109) con 1 ciudades y 2 calles
+Pais Bahrain (id: 11) con 1 ciudades y 0 calles
+Pais Chad (id: 21) con 1 ciudades y 0 calles
+Pais Gambia (id: 37) con 1 ciudades y 0 calles
+Pais Hungary (id: 43) con 1 ciudades y 0 calles
+Pais Iraq (id: 47) con 1 ciudades y 0 calles
+Pais Lithuania (id: 56) con 1 ciudades y 0 calles
+Pais Nauru (id: 65) con 1 ciudades y 0 calles
